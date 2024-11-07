@@ -1,0 +1,15 @@
+# actions-repo-3/custom-action-2/action.yml
+name: Custom Action 2 in Repo 3
+
+description: This action performs the final task
+
+inputs:
+  another-input:
+    description: "Input passed from the custom action in Repo 2"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Perform final task with input
+      run: echo "Processing input: ${{ inputs.another-input }}"
