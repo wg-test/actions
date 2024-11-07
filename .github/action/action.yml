@@ -11,7 +11,7 @@ runs:
   using: "composite"
   steps:
     - name: Echo Merge to Next Branch
-    run: |
+      run: |
       echo "Merge to next branch"
 
     - name: Run Command
